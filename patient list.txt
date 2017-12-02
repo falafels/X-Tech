@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title style="text-align:center;">Patient List</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {
+	font-family: "Raleway", Arial, sans-serif;
+	background-color: #ccf2ff;
+}
+</style>
+
+<div class="w3-container">
+  <h2  style="text-align:center;">Patient List</h2>
+
+  <table class="w3-table">
+    <tr>
+      <th>Name</th>
+      <th>Room Number</th>
+      <th>Procedure</th>
+    </tr>
+    <tr style="background-color: rgba(255, 99, 71, 0.5)">
+      <td>Jill Smith</td>
+      <td>1605</td>
+      <td>AP CHEST</td>
+    </tr>
+    <tr style="background-color: #fdfd96">
+      <td>John Doe</td>
+      <td>1088</td>
+      <td>RT LAT LIVER</td>
+    </tr>
+    <tr style="background-color: white">
+      <td>Adam Washington</td>
+      <td>2331</td>
+      <td>PO OBLIQUE WRIST</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+</html>
