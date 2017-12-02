@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1265.21">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;title&gt;Upload Patient Information&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">       </span>&lt;link rel="stylesheet" media="screen" href ="static/bootstrap.min.css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">       </span>&lt;link rel="stylesheet" href="static/bootstrap-theme.min.css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">       </span>&lt;meta name="viewport" content = "width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;body&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;div class="container"&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Flask Web Form&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;form<span class="Apple-converted-space">  </span>action="" method="post" role="form"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>{{ form.csrf }}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="form-group"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;label for="name"&gt;Name:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;input type="text" class="form-control" id="name" name="name" placeholder="What's their name?"&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;label for=“referring physician”&gt;Referring Physician:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;input type="text" class="form-control" id=“referring physician” name=“referring physician” placeholder=“referring physician”&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;label for=“gender”&gt;Gender:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;input type=“gender” class="form-control" id=“gender” name=“gender” placeholder=“gender”&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;label for=“dob”&gt;DOB:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;input type="text" class="form-control" id=“dob” name=“dob” placeholder=“month day,year”&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;label for=“rmNum”&gt;Room Number:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;input type="text" class="form-control" id=“rmNum” name=“rmNum” placeholder=“room number”&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;label for=“protocol”&gt;Protocol:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;input type="text" class="form-control" id=“protocol” name=“protocol” placeholder=“protocol”&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;label for=“priorty”&gt;Priorty:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;input type="text" class="form-control" id=“priority” name=“priority” placeholder=“priority”&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;label for=“IDnum”&gt;ID number:&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>&lt;input type="text" class="form-control" id=“IDnum” name=“IDnum” placeholder=“ID number”&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;button type="submit" class="btn btn-success"&gt;Sign Up&lt;/button&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/form&gt;</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% with messages = get_flashed_messages(with_categories=true) %}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{% if messages %}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% for message in messages %}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{% if "Error" not in message[1]: %}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="alert alert-info"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;strong&gt;Success! &lt;/strong&gt; {{ message[1] }}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{% endif %}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">            </span>{% if "Error" in message[1]: %}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="alert alert-warning"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>{{ message[1] }}</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{% endif %}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% endfor %}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>{% endif %}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>{% endwith %}</p>
+<p class="p2"><span class="Apple-converted-space"> </span></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;br&gt; <span class="Apple-converted-space">           </span></p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/div&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+<p class="p2"><br></p>
+<p class="p2"><br></p>
+</body>
+</html>
