@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <title>Upload Patient Information</title>
+       <link rel="stylesheet" media="screen" href ="static/bootstrap.min.css">
+       <link rel="stylesheet" href="static/bootstrap-theme.min.css">
+       <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+ 
+    </head>
+    <body>
+ 
+ 
+<div class="container">
+ 
+ 
+  <h2>Flask Web Form</h2>
+  <form  action="" method="post" role="form">
+    {{ form.csrf }}
+    <div class="form-group">
+	<label for="name">Name:</label>
+	<input type="text" class="form-control" id="name" name="name" placeholder="What's their name?">
+	<br>
+	<label for=“referring physician”>Referring Physician:</label>
+	<input type="text" class="form-control" id=“referring physician” name=“referring physician” placeholder=“referring physician”>
+	<br>
+	<label for=“gender”>Gender:</label>
+	<input type=“gender” class="form-control" id=“gender” name=“gender” placeholder=“gender”>
+	<br>
+	<label for=“dob”>DOB:</label>
+	<input type="text" class="form-control" id=“dob” name=“dob” placeholder=“month day,year”>
+	<br>
+	<label for=“rmNum”>Room Number:</label>
+	<input type="text" class="form-control" id=“rmNum” name=“rmNum” placeholder=“room number”>
+	<br>
+	<label for=“protocol”>Protocol:</label>
+	<input type="text" class="form-control" id=“protocol” name=“protocol” placeholder=“protocol”>
+	<br>
+	<label for=“priorty”>Priorty:</label>
+	<input type="text" class="form-control" id=“priority” name=“priority” placeholder=“priority”>
+	<br>
+	<label for=“IDnum”>ID number:</label>
+	<input type="text" class="form-control" id=“IDnum” name=“IDnum” placeholder=“ID number”>
+
+
+
+
+    </div>
+    <button type="submit" class="btn btn-success">Sign Up</button>
+  </form>
+ 
+  <br>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+ 
+        {% for message in messages %}
+            {% if "Error" not in message[1]: %}
+                <div class="alert alert-info">
+                <strong>Success! </strong> {{ message[1] }}
+                </div>
+            {% endif %}
+ 
+            {% if "Error" in message[1]: %}
+                <div class="alert alert-warning">
+                {{ message[1] }}
+                </div>
+            {% endif %}
+        {% endfor %}
+            {% endif %}
+        {% endwith %}
+ 
+</div>
+<br>            
+</div>
+</div>
+</body>
+</html>
+
+
