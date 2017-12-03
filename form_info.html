@@ -8,47 +8,69 @@
  
     </head>
     <body>
+
+<style>
+body {
+	font-family: "Raleway", Arial, sans-serif;
+	background-color: #ccf2ff;
+    style="align:center;
+}
+div {
+	margin-left: 150px;
+}
+</style>
  
+<!-- Header -->
+<center><header class="w3-panel w3-center w3-opacity" style="padding:40px 16px">
+  <img src="https://ton.twitter.com/i/ton/data/dm/936978468126027780/936978441718476800/EEuw-yUe.png:large" style="width:300px;height:175px;"></center>
+  
+<div class="container"> 
  
-<div class="container">
- 
- 
-  <h2>Flask Web Form</h2>
+  <center><h2>Patient Requisite</h2></center>
   <form  action="" method="post" role="form">
     {{ form.csrf }}
     <div class="form-group">
-	<label for="name">Name:</label>
-	<input type="text" class="form-control" id="name" name="name" placeholder="What's their name?">
+	<label for="name"><b>Name</b></label>
+	<center><input type="text" class="form-control" id="name" name="name" placeholder="Last, First"></center>
 	<br>
-	<label for=“referring physician”>Referring Physician:</label>
-	<input type="text" class="form-control" id=“referringphysician” name=“referringphysician” placeholder=“referring physician”>
+	<label for=“referring physician”><b>Referring Physician</b></label>
+	<center><input type="text" class="form-control" id=“referringphysician” name=“referringphysician” placeholder="Last, First"></center>
 	<br>
-	<label for=“gender”>Gender:</label>
-	<input type=“gender” class="form-control" id=“gender” name=“gender” placeholder=“gender”>
+	<label for=“gender”><b>Gender</b></label>
+	<center><input type=“gender” class="form-control" id=“gender” name=“gender” placeholder="Male, Female, Non-Binary"></center>
 	<br>
-	<label for=“dob”>DOB:</label>
-	<input type="text" class="form-control" id=“dob” name=“dob” placeholder=“month/day/year”>
+	<label for=“dob”><b>D.O.B</b></label>
+	<center><input type="text" class="form-control" id=“dob” name=“dob” placeholder="Month/Day/Year"></center>
 	<br>
-	<label for=“rmNum”>Room Number:</label>
-	<input type="text" class="form-control" id=“rmNum” name=“rmNum” placeholder=“roomnumber”>
+	<label for=“rmNum”><b>Room Number</b></label>
+	<center><input type="text" class="form-control" id=“rmNum” name=“rmNum” placeholder="Check Availability"></center>
 	<br>
-	<label for=“protocol”>Protocol:</label>
-	<input type="text" class="form-control" id=“protocol” name=“protocol” placeholder=“protocol”>
+	<label for=“protocol”><b>Protocol</b></label>
+	<center><input type="text" class="form-control" id=“protocol” name=“protocol” placeholder="View Position & Anatomy"></center>
 	<br>
-	<label for=“priorty”>Priorty:</label>
-	<input type="text" class="form-control" id=“priority” name=“priority” placeholder=“priority”>
+	<label for=“priorty”><b>Priority</b></label>
+	<center><input type="text" class="form-control" id=“priority” name=“priority” placeholder="Urgent, Emergent, Walk-In"></center>
 	<br>
-	<label for=“IDnum”>ID number:</label>
-	<input type="text" class="form-control" id=“IDnum” name=“IDnum” placeholder=“IDnumber”>
+	<label for=“IDnum”><b>ID Number</b></label>
+	<center><input type="text" class="form-control" id=“IDnum” name=“IDnum” placeholder="Patient Identification"></center>
 
-
-
+<p style="margin-left: 1em;padding: 0 1em 1em 0;border-width: 1px; border-color: #ccf2ff; border-style:solid;"></p>
 
     </div>
-    <button type="submit" class="btn btn-success">Sign Up</button>
-  </form>
+    <center><button type="submit" class="btn btn-success">Sign Up</button>
+  </form></center>
  
   <br>
+  
+ <p style="margin-left: 10em;padding: 0 10em 10em 0;border-width: 10px; border-color: #ccf2ff; border-style:solid;"></p>
+
+
+<a href="default.asp">
+    	</div>
+    <button type="GoBack" class="btn btn-success">Return</button>
+  </form> 
+	</a>
+    
         {% with messages = get_flashed_messages(with_categories=true) %}
             {% if messages %}
  
@@ -74,4 +96,3 @@
 </div>
 </body>
 </html>
-
